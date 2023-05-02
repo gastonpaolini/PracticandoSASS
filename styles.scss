@@ -9,6 +9,12 @@ body{
         margin: 10px;
     }
 
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:repeat(2, 5fr) ;
+    }
+
     @each $bio in bio1,bio2,bio3,bio4,bio5,bio6,bio7,bio8 {
     .#{$bio}-img {
             background-image: url(./media/img#{$bio}.jpg);
@@ -18,5 +24,6 @@ body{
             width: 400px;
             padding: 10px;
             margin: 10px;
+            border-radius: 5px;
         }
     }
