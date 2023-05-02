@@ -10,9 +10,16 @@ body{
     }
 
     .contenedor{
+        height: 100vh;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows:repeat(2, 5fr) ;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:repeat(4, 1fr) ;
+        grid-template-areas: 
+        "bio1 bio1 bio2"
+        "bio3 bio5 bio2"
+        "bio4 bio5 bio6"
+        "bio7 bio8 bio6";
+        background-color: steelblue;
     }
 
     @each $bio in bio1,bio2,bio3,bio4,bio5,bio6,bio7,bio8 {
@@ -20,10 +27,41 @@ body{
             background-image: url(./media/img#{$bio}.jpg);
             background-size: cover;
             background-position: center;
-            height: 400px;
-            width: 400px;
             padding: 10px;
             margin: 10px;
-            border-radius: 5px;
+            border-radius: 10px;
+            grid-area: $bio;
+            filter: grayscale(1);
+            transition: all 1.09s;            
         }
     }
+
+    @each $bio in bio1,bio2,bio3,bio4,bio5,bio6,bio7,bio8 {
+        .#{$bio}-img:hover {
+            filter: grayscale(0);
+            transform: scale(1.20);
+            transition: all 1.09s;
+            z-index: 1;
+            box-shadow: 0 0 5px white;
+            border: solid 3px white;
+        }
+    }
+
+@media only screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(8, 1fr) ;
+        grid-template-areas: 
+        "bio1"
+        "bio2"
+        "bio3"
+        "bio4"
+        "bio5"
+        "bio6"
+        "bio7"
+        "bio8";
+        height: 100vh*3;
+    }
+
+}
+    

@@ -10,97 +10,189 @@ h1 {
 }
 
 .contenedor {
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 5fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "bio1 bio1 bio2" "bio3 bio5 bio2" "bio4 bio5 bio6" "bio7 bio8 bio6";
+  background-color: steelblue;
 }
 
 .bio1-img {
   background-image: url(./media/imgbio1.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio1;
+  filter: grayscale(1);
+  transition: all 1.09s;
 }
 
 .bio2-img {
   background-image: url(./media/imgbio2.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio2;
+  filter: grayscale(1);
+  transition: all 1.09s;
 }
 
 .bio3-img {
   background-image: url(./media/imgbio3.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio3;
+  filter: grayscale(1);
+  transition: all 1.09s;
 }
 
 .bio4-img {
   background-image: url(./media/imgbio4.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio4;
+  filter: grayscale(1);
+  transition: all 1.09s;
 }
 
 .bio5-img {
   background-image: url(./media/imgbio5.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio5;
+  filter: grayscale(1);
+  transition: all 1.09s;
 }
 
 .bio6-img {
   background-image: url(./media/imgbio6.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio6;
+  filter: grayscale(1);
+  transition: all 1.09s;
 }
 
 .bio7-img {
   background-image: url(./media/imgbio7.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio7;
+  filter: grayscale(1);
+  transition: all 1.09s;
 }
 
 .bio8-img {
   background-image: url(./media/imgbio8.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 400px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  grid-area: bio8;
+  filter: grayscale(1);
+  transition: all 1.09s;
+}
+
+.bio1-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+.bio2-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+.bio3-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+.bio4-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+.bio5-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+.bio6-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+.bio7-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+.bio8-img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+  transition: all 1.09s;
+  z-index: 1;
+  box-shadow: 0 0 5px white;
+  border: solid 3px white;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "bio1" "bio2" "bio3" "bio4" "bio5" "bio6" "bio7" "bio8";
+    height: 300vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
