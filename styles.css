@@ -1,6 +1,92 @@
 body {
   background-color: orange;
+}
+
+h1 {
+  text-align: center;
   color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio1-img {
+  background-image: url(./media/imgbio1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio2-img {
+  background-image: url(./media/imgbio2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio3-img {
+  background-image: url(./media/imgbio3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio4-img {
+  background-image: url(./media/imgbio4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio5-img {
+  background-image: url(./media/imgbio5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio6-img {
+  background-image: url(./media/imgbio6.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio7-img {
+  background-image: url(./media/imgbio7.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bio8-img {
+  background-image: url(./media/imgbio8.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

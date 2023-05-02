@@ -1,4 +1,22 @@
 body{
     background-color: orange;
-    color: white;
+    }
+
+    h1{
+        text-align: center;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    @each $bio in bio1,bio2,bio3,bio4,bio5,bio6,bio7,bio8 {
+    .#{$bio}-img {
+            background-image: url(./media/img#{$bio}.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+        }
     }
